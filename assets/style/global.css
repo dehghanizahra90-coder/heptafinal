@@ -180,6 +180,9 @@
  .pt48{
    padding-top: 48px;
  }
+ .pt24{
+   padding-top: 24px;
+ }
  .bt{
    padding-bottom: 30px;
  }
@@ -245,6 +248,9 @@
    background: #fafafa;
    border-top: 1px solid #e0e0e0;
  } 
+ .color_white{
+   color:#fff
+ }
   .title{
    font-size:70px;
    margin: 0;
@@ -275,8 +281,7 @@
     padding: 55px 0;
  }
  .header .header__logo a {
-    font-size: 30px;
-    color: #fff;
+    font-size: 30px;    
     font-weight: bold;
     line-height: 30px;
  }
@@ -286,8 +291,7 @@
  }
  .header .header__menu span {
     height: 2px;
-    width: 100%;
-    background-color: #fff;
+    width: 100%;   
     display: block
  }
  .hero {
@@ -310,18 +314,13 @@
  }
  .hero .hero__content {
     height: 100vh;
-    min-height: 700px;
-    color: #fff;     
+    min-height: 700px;    
  }
  .hero .hero__content::selection{
    background-color:#65c0ba;
  }
- .hero .hero__content a{
-   color: #fff;   
- }
  .hero .hero__content h1 {
-    font-size: 80px;
-    color: #fff;
+    font-size: 80px;    
     font-weight: bold;
     line-height: 80px;
  }
@@ -347,8 +346,7 @@
     color: #000;       
  }
  .hero .hero__scroll {
-    font-size: 13px;
-    color: #fff;
+    font-size: 12px;    
     margin-top: -55px;
     text-transform: uppercase;    
  } 
@@ -373,13 +371,15 @@
  .welcome .welcome__content a:hover .icon {
     color: #000;
     border-color: #000;
+    transition: all 0.3s 
  }
  .welcome .welcome__content a {
     color: #65c0ba;
     font-weight: bold;
+    letter-spacing: 1.8px
  }
  .welcome .welcome__content a:hover span {
-    color: #3a9a94;
+    color: #3f9a94;
  }
  .international::selection{
    background-color: #65c0ba;
@@ -458,24 +458,23 @@
    color:#000;
    font-size:26px;
    line-height: 1.2;
- }
- .blog .col_4 .caption .caption__content {
-   max-height:120px
  } 
  .testimonial .testimonial__content img {
    width:70px;
    height: 70px;
    border-radius: 50%;   
  }
- .testimonial .testimonial__content .titlep{
+ .testimonial .testimonial__content .idea{
    font-style: italic;
    color: #000;
    font-weight: 200;
+   font-size: 20px;
+   line-height: 30px;
  }
- .testimonial .testimonial__content .titlep:before{
+ .testimonial .testimonial__content .idea:before{
    content:"“"
  }
- .testimonial .testimonial__content .titlep:after{
+ .testimonial .testimonial__content .idea:after{
    content:"”"
  }
  .testimonial .testimonial__content .author::before{
@@ -523,23 +522,25 @@
    background-color:transparent;
    outline:none;
    border:none;
-   border-bottom:1px solid rgba(255, 255, 255, 0.1);
+   border-bottom:1px solid rgba(255, 255, 255, 0.2);
    padding:6px 12px;
    font-size: 15px;
    width: 100%;   
-   height:50px;   
+   height:50px;      
  }
  .footer .subscribe input:focus{
    border-bottom:1px solid rgba(255, 255, 255, 1);
  } 
+ .footer .subscribe .input button i{
+   padding-left: 20px;
+ }
  .footer .subscribe button {
-   background-color: transparent;
-   color: #fff;
+   background-color: transparent;   
    border:none;
    outline:none;
    position:absolute;
    bottom: 15px;
-   right: 10px;   
+   right: 10px;     
  }
  .footer .footer_line{
    border:1px solid rgba(255, 255, 255, 0.1);
@@ -554,7 +555,10 @@
     .footer .footer_copy a{  
      color: rgba(255, 255, 255, 0.7);
    }   
- .footer .footer_social a{
+   .footer .footer_copy a:hover{
+      color:#fff
+   }
+   .footer .footer_social a{
     color:rgba(255, 255, 255, 0.7);
     padding: 10px;
  }
