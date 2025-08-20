@@ -1,5 +1,9 @@
  * {
     box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -webkit-sizing:border-box;
+    -o-box-sizing:border-box;
  }
  body {
     margin: 0;
@@ -28,12 +32,9 @@
     color: #000;
     font-weight: 500;
  }
- p {
-    /* color: #6c757d; */
-    /* font-weight: 200; */
+ p {    
     margin-bottom: 16px;
-    margin-top: 0;
-    /* line-height:1.7; */
+    margin-top: 0;   
  }
  .container {
     width: 100%;
@@ -41,8 +42,7 @@
     margin: 0 auto;
  }
  .container_full {
-    width: 100%;
-    /* padding: 0 30px; */
+    width: 100%;    
     padding: 0 15px;
     margin: 0 auto;
     max-width: 1600px;
@@ -148,7 +148,7 @@
     margin-bottom: 10px
  }
  .mb15{
-   margin-bottom: 15;
+   margin-bottom: 15px;
  }
  .mb16 {
     margin-bottom: 16px
@@ -253,15 +253,11 @@
  }
  .titlep{
    font-size: 20px;
-   font-weight: 300;
-   margin: 0;
-   margin-bottom: 16px;
+   font-weight: 300;  
  }
  .titlepw{
    font-size: 20px;
-   font-weight: 300;
-   margin: 0;
-   margin-bottom: 16px;
+   font-weight: 300;   
    color:rgba(255, 255, 255, 0.7);
  } 
  .italic{
@@ -300,8 +296,7 @@
     width: 100%;
     height: 100vh;
     min-height: 700px;
-    background-position: center center;
-    position: relative;
+    background-position: center center;   
  }
  .hero:before {
     content: "";
@@ -331,8 +326,7 @@
     line-height: 80px;
  }
  .hero .hero__content p {
-    font-size: 30px;
-    /* font-weight: 200; */
+    font-size: 30px;    
     line-height: 45px;
  }
  .hero .hero__content p a {
@@ -346,7 +340,7 @@
  .hero .hero__content .button {
     color: #f8f9fa;    
     border-color: #f8f9fa;
-    font-weight: bold;    
+    font-weight: 300;    
  }
  .hero .hero__content .button:hover {
     background-color: #fff;  
@@ -364,8 +358,7 @@
  .welcome .welcome__content {
     padding: 0 15px 0 48px
  }
- .welcome .welcome__content .icon {
-    position: relative;
+ .welcome .welcome__content .icon {    
     width: 50px;
     height: 50px;
     border: 2px solid #e6e6e6;
@@ -391,8 +384,7 @@
  .international::selection{
    background-color: #65c0ba;
  }
- .international .international__slider{
-   position:relative;
+ .international .international__slider{   
    z-index: 2;
  }
  .international .international__slider .arrow {
@@ -432,8 +424,7 @@
    border-radius: 50%;
    border:1px solid #fff;   
  }
- .background_design{
-    position: relative;
+ .background_design{   
     width: 100%;
     height: 290px;
     overflow: hidden;
@@ -452,6 +443,7 @@
  }
  .blog::selection{
    color: #fff;
+   background-color:#65c0ba
  }
  .caption{
    padding:10px 30px;
@@ -467,6 +459,9 @@
    font-size:26px;
    line-height: 1.2;
  }
+ .blog .col_4 .caption .caption__content {
+   max-height:120px
+ } 
  .testimonial .testimonial__content img {
    width:70px;
    height: 70px;
@@ -476,18 +471,12 @@
    font-style: italic;
    color: #000;
    font-weight: 200;
-   position:relative;
  }
  .testimonial .testimonial__content .titlep:before{
    content:"“"
  }
  .testimonial .testimonial__content .titlep:after{
    content:"”"
- }
- .testimonial .testimonial__content .author{
-   font-weight: 200;
-   position: relative;
-   font-style: italic;   
  }
  .testimonial .testimonial__content .author::before{
    content:"—";
@@ -505,15 +494,10 @@
    color:#65c0ba;
  }
  .destination .destination__visit_section .rating span{
-    color: #ccc;
-    font-style: italic;   
-    /* font-size: 18px; */
+    color: #ccc;   
  }
  .footer{
    background-color:#1a1a1a;   
- }
- .footer ul li{
-   margin-bottom: 10px;   
  }
  .footer h3{
    color:#fff;
@@ -521,31 +505,29 @@
    line-height: 1.2;    
  }
  .footer ul li a{
-   color: rgba(255, 255, 255, 0.7);
-   /* font-size: 18px; */
+   color: rgba(255, 255, 255, 0.7);   
  }
  .footer ul li a:hover{
    color: rgba(255, 255, 255, 1);
  }
  .footer ul li span{
-   display:block;
-   font-size: 18px;
+   display:block;  
  }
- .footer ul li .entity{
+ .footer  .entity{
    color: #fff;
  }
- .footer .subscribe .input{
-   position:relative
- }
- .footer .subscribe input{
+ .footer .entity_text{
+   color: rgba(255, 255, 255, 0.5);
+ } 
+ .footer .subscribe input {
    background-color:transparent;
    outline:none;
    border:none;
    border-bottom:1px solid rgba(255, 255, 255, 0.1);
    padding:6px 12px;
    font-size: 15px;
-   width: 100%;
-   color:rgba(255, 255, 255, 0.1);
+   width: 100%;   
+   height:50px;   
  }
  .footer .subscribe input:focus{
    border-bottom:1px solid rgba(255, 255, 255, 1);
@@ -556,8 +538,8 @@
    border:none;
    outline:none;
    position:absolute;
-   top:0;
-   right:0
+   bottom: 15px;
+   right: 10px;   
  }
  .footer .footer_line{
    border:1px solid rgba(255, 255, 255, 0.1);
@@ -574,6 +556,5 @@
    }   
  .footer .footer_social a{
     color:rgba(255, 255, 255, 0.7);
-    /* font-size: 18px; */
     padding: 10px;
  }
