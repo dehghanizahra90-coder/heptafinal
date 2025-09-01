@@ -20,21 +20,37 @@
 
 </head>
 
-<body>
+<body> 
     <div class="header">
         <div class="container_full">
-            <div class="d_flex flex_space_between flex_align_items">
+            <div class="d_flex flex_space_between flex_align_items header_header">
                 <div class="header__logo">
                     <h3 class="mg"><a class="color_white" href="#">Hepta</a></h3>
                 </div>
-                <div class="header__menu d_flex direction_col  gap8">
-                    <span class="bg_white"></span>
-                    <span class="bg_white"></span>
-                    <span class="bg_white"></span>
-                </div>
-            </div>
+                <div id="click" onclick="toggle()" class="header__menu d_flex direction_col  gap8 ">
+                    <span class="bg_white i_1"></span>
+                    <span class="bg_white i_2"></span>
+                    <span class="bg_white i_3"></span>
+                </div> 
+                <div class="show_menu " id="show">            
+                  <ul class="text-align-center">
+                        <li><a href="#"><h4>Home</h4></a></li>
+                        <li><a href="#"><h4>Hotel</h4></a></li>
+                        <li><a href="#"><h4>About Us</h4></a></li>
+                        <li><a href="#"><h4>Gallery</h4></a></li>
+                        <li><a href="#"><h4>News</h4></a></li>
+                        <li><a href="#"><h4>Contact</h4></a></li>
+                    </ul> 
+                </div>               
+            </div>     
         </div>
     </div>
+    <script>
+        function toggle(){
+            document.getElementById("show").classList.toggle("open");
+            document.getElementById("click").classList.toggle("open");
+        }
+    </script>
     <div class="hero relative">
         <div class="container pl15 pr15">
             <div class="row flex_justify_center flex_align_items">
